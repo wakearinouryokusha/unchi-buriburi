@@ -292,8 +292,14 @@ function main(){
     const best=scores[0];
     const avg=Math.round(scores.reduce((a,b)=>a+b,0)/scores.length);
     const currentGen=startGen+gen+1;
-    history.push({gen:currentGen,best,avg});
-    if(best>allTimeBest)allTimeBest=best;
+history.push({gen:currentGen,best,avg});
+
+// 最新10000件だけ保持
+if (history.length > 10000) {
+  history = history.slice(-10000);
+}
+
+if(best>allTimeBest)allTimeBest=best;
 
     if((gen+1)%50===0||gen===0||gen===CONFIG.GENERATIONS-1){
       process.stdout.write(`世代 ${currentGen}: best=${best} avg=${avg} 全時間最高=${allTimeBest}\n`);
