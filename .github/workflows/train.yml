@@ -1,4 +1,4 @@
-yamlname: AI Auto-Training
+name: AI Auto-Training
 
 on:
   schedule:
