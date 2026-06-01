@@ -14,8 +14,8 @@ const CONFIG = {
   POP_SIZE     : 30,     // 個体数
   ELITE        : 3,      // エリート保存数
   MUT_RATE     : 0.12,   // 突然変異率
-  GENERATIONS  : 10000,    // 1回の実行で回す世代数
-  MAX_FRAMES   : 100000,  // 1個体の最大生存フレーム（打ち切り）
+  GENERATIONS  : 7000,    // 1回の実行で回す世代数
+  MAX_FRAMES   : 120000,  // 1個体の最大生存フレーム（打ち切り）
   MODEL_PATH   : path.join(__dirname, 'ai_model.json'),
   HISTORY_PATH : path.join(__dirname, 'train_history.json'),
 };
