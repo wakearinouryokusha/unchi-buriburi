@@ -13,7 +13,7 @@ const path = require('path');
 const CONFIG = {
   POP_SIZE     : 30,     // 個体数
   ELITE        : 3,      // エリート保存数
-  MUT_RATE     : 0.12,   // 突然変異率
+  MUT_RATE     : 0.05,   // 突然変異率
   GENERATIONS  : 7000,    // 1回の実行で回す世代数
   MAX_FRAMES   : 130000,  // 1個体の最大生存フレーム（打ち切り）
   MODEL_PATH   : path.join(__dirname, 'ai_model.json'),
