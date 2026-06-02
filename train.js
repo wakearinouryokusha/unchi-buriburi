@@ -13,8 +13,8 @@ const path = require('path');
 const CONFIG = {
   POP_SIZE     : 30,     // 個体数
   ELITE        : 3,      // エリート保存数
-  MUT_RATE     : 0.05,   // 突然変異率
-  GENERATIONS  : 1000,    // 1回の実行で回す世代数
+  MUT_RATE     : 0.12,   // 突然変異率
+  GENERATIONS  : 3000,    // 1回の実行で回す世代数
   MAX_FRAMES   : 10000000,  // 1個体の最大生存フレーム（打ち切り）
   MODEL_PATH   : path.join(__dirname, 'ai_model.json'),
   HISTORY_PATH : path.join(__dirname, 'train_history.json'),
