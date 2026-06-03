@@ -15,7 +15,7 @@ const CONFIG = {
   ELITE        : 3,      // エリート保存数
   MUT_RATE     : 0.12,   // 突然変異率
   GENERATIONS  : 3000,    // 1回の実行で回す世代数
-  MAX_FRAMES   : 10000000,  // 1個体の最大生存フレーム（打ち切り）
+  MAX_FRAMES   : 500000,  // 1個体の最大生存フレーム（打ち切り）
   MODEL_PATH   : path.join(__dirname, 'ai_model.json'),
   HISTORY_PATH : path.join(__dirname, 'train_history.json'),
 };
